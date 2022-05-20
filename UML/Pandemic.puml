@@ -1,0 +1,100 @@
+@startuml
+!pragma layout smetana
+
+'RELATIONSHIP BETWEEN CLASSES'
+Main *-- GameUI
+GameUI *-- MyFrame
+GameUI *-- Player
+
+Database - CardInfection
+Database - CardCity
+
+Field *-- Player
+CardInfection *-- infectedcity.txt
+
+
+'FIELDS AND METHODS'
+class Main {
++ static void main(String[] args)
+}
+
+class GameUI implements Mouselistener {
+- JFrame mainFrame
+- MyFrame bg
+- Field f
++ void gameStart()
++ void gameGUI()
++ void gameUIButton()
++ void mouseClicked()
+}
+
+class Player{
+- String playerNum;
+- int xPostmp, yPostmp, sizeHead;
+- Color color;
++ String getter()
++ void seter()
++ movePlayer()
++ treatPandemic()
++ curePandemic()
++ buildCenter()
++ shareCard()
++ flyWithCard()
+}
+
+class Field {
+- int xPosCities
+- int yPosCities
++ int getXposCity()
++ int getYposCity()
++ void setter()
+}
+
+class MyFrame extends JPanel{
+- Color lightRed
+- Color lightYellow
+- Color lightBlue
+- int xc, yc, r, diam, fieldDiam
+- double inc, theta
+- Field f
++ MyFrame()
++ void paintComponent()
++ void fields()
++ void player()
++ void lineBetweenFields()
+}
+
+class Researchcenter{
+- int xPosRC;
+- int yPosRC;
+- int widthRC;
+- int heightRC;
++ int getter()
++ void setter()
+}
+
+class CardInfection{
+- int pandemicLevel
+- ArrayList<String> InfectedCard
+- ArrayList<String> InfectedCardinGame
++ void startNewGame()
++ void deleteSQLinfections()
++ void readInfectionsFromFile()
++ void  putPandemicCardInArray()
++ void  readFromArrayPutInSQL()
++ void cardToArrayAndShuffleBack()
++ void countCardRowSQL()
+}
+
+class CardCity{
++ startNewGame()
++ drawCard()
++ eventCard()
+}
+
+class Virus{
++ getXYPos()
+}
+
+
+@enduml

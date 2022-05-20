@@ -1,3 +1,5 @@
+NOT DONE!!! Kan ikke spilles i dets nuværende stadie. 
+
 Fiktiv kunde:
 
 Skal have bygget og udviklet en applikation over brætspillet ’Pandemic’. 

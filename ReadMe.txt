@@ -1,3 +1,22 @@
+Webstorm/JetBrains/Rider products activation 2024 (Windows/MacOS)
+1.Proxy Settings
+Step 1: Navigate to Proxy settings.
+
+Step 2: Select "Manual proxy settings - HTTP".
+
+Hostname: localhost
+Port: 80
+Set no proxy for:
+
+jetbrains.com, www.jetbrains.com, download.jetbrains.com, plugins.jetbrains.com, github.com, *.github.com
+2.Activation
+Select activation method - activation code, and input:
+
+
+
+
+
+
 NOT DONE!!! Kan ikke spilles i dets nuværende stadie. 
 
 Fiktiv kunde:
